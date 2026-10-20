@@ -41,13 +41,13 @@ class StudentController extends Controller
     }
 
     // READ: Display a specific student
-    public function show(string $id)
+    public function show(Student $student)
     {
         return view('students.show', compact('student'));
     }
 
     // UPDATE: Show the edit form
-    public function edit(string $id)
+    public function edit(Student $student)
     {
         return view('students.edit', compact('student'));
     }
